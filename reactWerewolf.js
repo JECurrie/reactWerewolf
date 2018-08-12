@@ -1,16 +1,20 @@
 let moonPhase = 'full';
-let isFoggyNight = true
-if (moonPhase === 'full' || isFoggyNight === false) {
-  console.log("Howl!");
-} else if (moonPhase === 'mostly full') {
-  console.log('Arms and legs are getting hairier');
-} else if  (moonPhase === 'mostly new'){
-  console.log('Back on two feet');
-}
-else {
-  console.log('Invalid moon phase');
-}
+let isFoggyNight = true;
 
+switch(moonPhase) {
+  case 'full': 
+  console.log("Howl!");
+    break;
+  case 'mostly full':
+    console.log('Arms and legs are getting hairier');
+    break;
+  case 'mostly new':
+    console.log('Back on two feet');
+    break;
+  default:
+  console.log('Invalid moon phase');
+    break;
+}
 let hungerLevel = 10;
 if (hungerLevel > 7) {
   console.log("Time to eat!");
